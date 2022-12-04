@@ -4,7 +4,7 @@ pipeline {
         stage("Initializing Phase") {
             steps {
             sh "sudo apt-get update"
-            sh "script.sh"
+            sh "/home/ubuntu/ter/terraform/script.sh"
             sh "Terraform init"
             }
         }
