@@ -4,18 +4,17 @@ pipeline {
         stage("Initializing Phase") {
             steps {
             sh "sudo apt-get update"
-            sh "sudo apt-get install terraform"
-            sh "Terraform init"
+            sh "terraform init"
             }
         }
         stage("Planing Phase") {
             steps {
-            sh "Terraform plan"
+            sh "terraform plan"
             }
         }
         stage("Apply Phase") {
             steps {
-            sh "Terraform apply"
+            sh "terraform apply"
             }
         }
     }
