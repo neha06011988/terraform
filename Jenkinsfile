@@ -4,7 +4,7 @@ pipeline {
         stage("Initializing Phase") {
             steps {
             sh "sudo apt-get update"
-            sh "Terraform init"
+            sh "terraform init"
             }
         }
         stage("Planing Phase") {
