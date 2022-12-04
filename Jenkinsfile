@@ -9,12 +9,12 @@ pipeline {
         }
         stage("Planing Phase") {
             steps {
-            sh "Terraform plan"
+            sh "terraform plan"
             }
         }
         stage("Apply Phase") {
             steps {
-            sh "Terraform apply"
+            sh "terraform apply"
             }
         }
     }
